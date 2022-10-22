@@ -77,12 +77,9 @@ impl EventHandler<ggez::GameError> for structs::MainState {
 
     fn draw(&mut self, ctx: &mut ggez::Context) -> ggez::GameResult {
         graphics::clear(ctx, graphics::Color::BLACK);
-        //^clears the screen with white
-        //
-        //self.draw_rect( ctx, 0.0, 0.0, GAME_SCREENW + UIX, GAME_SCREENY, graphics::Color::WHITE,)?;
+        //^clears the screen with black
         //
         //self.draw_map(ctx)?;
-        //        self.draw_player(ctx)?;
         self.draw_fp(ctx)?;
         //self.show_rays(ctx)?;
 
